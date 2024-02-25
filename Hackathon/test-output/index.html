@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\2303728\AppData\Local\Temp\1\testng-eclipse-1915373372\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods,   33 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance link&quot;, &quot;Insurances_smoke&quot;)">runScenario("Health insurance link", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance variant name page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance variant name page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Travel Insurance results&quot;, &quot;Insurance_regression&quot;)">runScenario("Travel Insurance results", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance member page&quot;, &quot;Insurance_regression&quot;)">runScenario("Health insurance member page", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health Insurances results&quot;, &quot;Insurance_regression&quot;)">runScenario("Health Insurances results", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Travel insurance trip date page&quot;, &quot;Insurances_smoke&quot;)">runScenario("Travel insurance trip date page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Travel insurance home page&quot;, &quot;Insurances_smoke&quot;)">runScenario("Travel insurance home page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance final page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance final page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance positive contact page&quot;, &quot;Insurances_smoke&quot;)">runScenario("Health insurance positive contact page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance contact details page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance contact details page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Car insurance&quot;, &quot;Insurances_end_to_end&quot;)">runScenario("Car insurance", "Insurances_end_to_end")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance positve name and negative phone contact page&quot;, &quot;Insurance_regression&quot;)">runScenario("Health insurance positve name and negative phone contact page", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Travel insurance medical history page&quot;, &quot;Insurances_smoke&quot;)">runScenario("Travel insurance medical history page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance city page&quot;, &quot;Insurances_smoke&quot;)">runScenario("Health insurance city page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance city page&quot;, &quot;Insurance_regression&quot;)">runScenario("Health insurance city page", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health Insurance menu&quot;, &quot;Insurances_end_to_end&quot;)">runScenario("Health Insurance menu", "Insurances_end_to_end")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance RTO page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance RTO page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance model name page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance model name page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health Insurance&quot;, &quot;Insurances_end_to_end&quot;)">runScenario("Health Insurance", "Insurances_end_to_end")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance link&quot;, &quot;Insurance_regression&quot;)">runScenario("Health insurance link", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance positive name contact page&quot;, &quot;Insurance_regression&quot;)">runScenario("Health insurance positive name contact page", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance brand name page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance brand name page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance contact details page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance contact details page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance age page&quot;, &quot;Insurances_smoke&quot;)">runScenario("Health insurance age page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance home page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance home page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Travel insurance&quot;, &quot;Insurances_end_to_end&quot;)">runScenario("Travel insurance", "Insurances_end_to_end")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Travel insurance results page&quot;, &quot;Insurances_smoke&quot;)">runScenario("Travel insurance results page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance result page&quot;, &quot;Insurance_regression&quot;)">runScenario("Health insurance result page", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Travel insurance contact details page&quot;, &quot;Insurance_regression&quot;)">runScenario("Travel insurance contact details page", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Travel insurance traveller page&quot;, &quot;Insurances_smoke&quot;)">runScenario("Travel insurance traveller page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance age page&quot;, &quot;Insurance_regression&quot;)">runScenario("Health insurance age page", "Insurance_regression")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;car insurance model fueltype page&quot;, &quot;Insurances_smoke&quot;)">runScenario("car insurance model fueltype page", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="travelInsurance.TestRunner.InsuranceTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Health insurance menu&quot;, &quot;Insurances_smoke&quot;)">runScenario("Health insurance menu", "Insurances_smoke")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">travelInsurance.TestRunner.InsuranceTestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance link&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Health insurance link", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance link","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance variant name page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance variant name page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance variant name page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Travel Insurance results&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Travel Insurance results", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Travel Insurance results","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance member page&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Health insurance member page", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance member page","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health Insurances results&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Health Insurances results", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health Insurances results","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Travel insurance trip date page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Travel insurance trip date page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Travel insurance trip date page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Travel insurance home page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Travel insurance home page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Travel insurance home page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance final page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance final page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance final page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance positive contact page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Health insurance positive contact page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance positive contact page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance contact details page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance contact details page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance contact details page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Car insurance&quot;, &quot;Insurances_end_to_end&quot;)">
+                  </a> <!-- runScenario("Car insurance", "Insurances_end_to_end") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Car insurance","Insurances_end_to_end")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance positve name and negative phone contact page&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Health insurance positve name and negative phone contact page", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance positve name and negative phone contact page","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Travel insurance medical history page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Travel insurance medical history page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Travel insurance medical history page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance city page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Health insurance city page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance city page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance city page&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Health insurance city page", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance city page","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health Insurance menu&quot;, &quot;Insurances_end_to_end&quot;)">
+                  </a> <!-- runScenario("Health Insurance menu", "Insurances_end_to_end") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health Insurance menu","Insurances_end_to_end")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance RTO page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance RTO page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance RTO page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance model name page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance model name page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance model name page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health Insurance&quot;, &quot;Insurances_end_to_end&quot;)">
+                  </a> <!-- runScenario("Health Insurance", "Insurances_end_to_end") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health Insurance","Insurances_end_to_end")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance link&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Health insurance link", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance link","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance positive name contact page&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Health insurance positive name contact page", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance positive name contact page","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance brand name page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance brand name page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance brand name page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance contact details page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance contact details page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance contact details page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance age page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Health insurance age page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance age page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance home page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance home page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance home page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Travel insurance&quot;, &quot;Insurances_end_to_end&quot;)">
+                  </a> <!-- runScenario("Travel insurance", "Insurances_end_to_end") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Travel insurance","Insurances_end_to_end")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Travel insurance results page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Travel insurance results page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Travel insurance results page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance result page&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Health insurance result page", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance result page","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Travel insurance contact details page&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Travel insurance contact details page", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Travel insurance contact details page","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Travel insurance traveller page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Travel insurance traveller page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Travel insurance traveller page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance age page&quot;, &quot;Insurance_regression&quot;)">
+                  </a> <!-- runScenario("Health insurance age page", "Insurance_regression") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance age page","Insurance_regression")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;car insurance model fueltype page&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("car insurance model fueltype page", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("car insurance model fueltype page","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Health insurance menu&quot;, &quot;Insurances_smoke&quot;)">
+                  </a> <!-- runScenario("Health insurance menu", "Insurances_smoke") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Health insurance menu","Insurances_smoke")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2303728\AppData\Local\Temp\1\testng-eclipse-1915373372\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;travelInsurance.TestRunner.InsuranceTestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(0, 3, 48198);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(1, 3, 45160);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(2, 3, 44961);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(3, 3, 40950);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(4, 3, 32082);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(5, 3, 31263);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(6, 3, 30726);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(7, 3, 29924);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(8, 3, 28475);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(9, 3, 27441);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(10, 3, 26252);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(11, 3, 25908);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(12, 3, 24312);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(13, 3, 24288);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(14, 3, 23101);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(15, 3, 22963);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(16, 3, 22922);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(17, 3, 22492);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(18, 3, 22418);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(19, 3, 22092);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(20, 3, 21875);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(21, 3, 21790);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(22, 3, 21727);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(23, 3, 21627);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(24, 3, 21318);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(25, 3, 21046);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(26, 3, 20472);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(27, 3, 20448);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(28, 3, 19891);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(29, 3, 18834);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(30, 3, 18418);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(31, 3, 16275);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'travelInsurance.TestRunner.InsuranceTestRunner')
+data.setCell(32, 3, 15924);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">travelInsurance.TestRunner.InsuranceTestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@7fa1004)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Travel insurance", "Insurances_end_to_end")</span>
+                <span class="method-start">2951 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Car insurance", "Insurances_end_to_end")</span>
+                <span class="method-start">51161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health Insurance menu", "Insurances_end_to_end")</span>
+                <span class="method-start">83246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health Insurance", "Insurances_end_to_end")</span>
+                <span class="method-start">99524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Travel insurance contact details page", "Insurance_regression")</span>
+                <span class="method-start">144489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Travel Insurance results", "Insurance_regression")</span>
+                <span class="method-start">175218 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance link", "Insurance_regression")</span>
+                <span class="method-start">220382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance member page", "Insurance_regression")</span>
+                <span class="method-start">242877 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance age page", "Insurance_regression")</span>
+                <span class="method-start">264670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance city page", "Insurance_regression")</span>
+                <span class="method-start">285119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance positive name contact page", "Insurance_regression")</span>
+                <span class="method-start">307214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance positve name and negative phone contact page", "Insurance_regression")</span>
+                <span class="method-start">328942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance result page", "Insurance_regression")</span>
+                <span class="method-start">351363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health Insurances results", "Insurance_regression")</span>
+                <span class="method-start">377619 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Travel insurance home page", "Insurances_smoke")</span>
+                <span class="method-start">418572 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Travel insurance trip date page", "Insurances_smoke")</span>
+                <span class="method-start">441537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Travel insurance traveller page", "Insurances_smoke")</span>
+                <span class="method-start">471463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Travel insurance medical history page", "Insurances_smoke")</span>
+                <span class="method-start">498906 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Travel insurance results page", "Insurances_smoke")</span>
+                <span class="method-start">527383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance home page", "Insurances_smoke")</span>
+                <span class="method-start">558648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance RTO page", "Insurances_smoke")</span>
+                <span class="method-start">579970 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance brand name page", "Insurances_smoke")</span>
+                <span class="method-start">601848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance model name page", "Insurances_smoke")</span>
+                <span class="method-start">622323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance model fueltype page", "Insurances_smoke")</span>
+                <span class="method-start">643372 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance variant name page", "Insurances_smoke")</span>
+                <span class="method-start">666296 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance contact details page", "Insurances_smoke")</span>
+                <span class="method-start">689398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance contact details page", "Insurances_smoke")</span>
+                <span class="method-start">713687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("car insurance final page", "Insurances_smoke")</span>
+                <span class="method-start">738000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance menu", "Insurances_smoke")</span>
+                <span class="method-start">763911 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance link", "Insurances_smoke")</span>
+                <span class="method-start">779836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance age page", "Insurances_smoke")</span>
+                <span class="method-start">798255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance city page", "Insurances_smoke")</span>
+                <span class="method-start">817090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Health insurance positive contact page", "Insurances_smoke")</span>
+                <span class="method-start">836984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">858643 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
