@@ -6,8 +6,10 @@
       <class name="travelInsurance.TestRunner.InsuranceTestRunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="3"/>
+          <include name="runScenario"/>
         </methods>
       </class> <!-- travelInsurance.TestRunner.InsuranceTestRunner -->
     </classes>

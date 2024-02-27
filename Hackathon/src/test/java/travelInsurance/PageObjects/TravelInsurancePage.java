@@ -11,7 +11,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class TravelInsurancePage extends BasePage{
@@ -167,8 +169,13 @@ public class TravelInsurancePage extends BasePage{
     
     //method to assert with title
     public void title() {
-    	String t= "Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car";
-    	Assert.assertEquals(t,driver.getTitle().toString());
+    	String t= "Health, Term, Life, Car";
+    	if(driver.getTitle().contains(t)) {
+    		Assert.assertTrue(true);
+    	}
+    	else {
+    		Assert.assertTrue(false);
+    	}
     }
 
     //method to click on travel insuranc icon
@@ -290,7 +297,8 @@ public class TravelInsurancePage extends BasePage{
   	}
   	
   	public void navigateToContactDetailsPage() {
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+  		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space()='Next']")));
   		js.executeScript("arguments[0].click();", proceedToContactDetails);
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		

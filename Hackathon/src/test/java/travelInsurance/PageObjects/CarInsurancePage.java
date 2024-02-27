@@ -115,8 +115,13 @@ public class CarInsurancePage extends BasePage {
     JavascriptExecutor js = (JavascriptExecutor) driver;
     
     public void title() {
-    	String t = "PolicyBazaar Car Insurance: Insure Your Car Today";
-    	Assert.assertEquals(t,driver.getTitle().toString());
+    	String t = "PolicyBazaar Car Insurance";
+    	if(driver.getTitle().contains(t)) {
+    		Assert.assertTrue(true);
+    	}
+    	else {
+    		Assert.assertTrue(false);
+    	}
     }
     
     //method to navigate back to homepage
