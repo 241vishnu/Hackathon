@@ -118,6 +118,11 @@ public class HealthInsurancePage extends BasePage{
 	WebElement applyBtn;
 	
     JavascriptExecutor js = (JavascriptExecutor) driver;
+    
+    public void title() {
+    	String t="Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*";
+    	Assert.assertEquals(t,driver.getTitle().toString());
+    }
 
     public void clicklogo() {
     	logo1.click();

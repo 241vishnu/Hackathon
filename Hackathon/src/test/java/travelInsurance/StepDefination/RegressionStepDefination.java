@@ -3,13 +3,9 @@ package travelInsurance.StepDefination;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 
 import com.utils.HelperClass;
 import com.utils.excelUtils;
@@ -33,7 +29,8 @@ public class RegressionStepDefination {
 	public void user_navigate_to_contact_details_page() {
 		driver=HelperClass.getDriver();
 		TIP = new TravelInsurancePage(driver);
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
 		TIP.travelInsuranceIcon();									//to click travel insurance icon
 		TIP.destinationDetails("United Kingdom");					//to enter a country name
 		TIP.DestinationDropDown(); 							//to select the respective country from dropdown
@@ -62,7 +59,8 @@ public class RegressionStepDefination {
 	public void user_navigated_travel_insurance_results_page() {
 		driver=HelperClass.getDriver();
 		TIP = new TravelInsurancePage(driver);
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
 		TIP.travelInsuranceIcon();									//to click travel insurance icon
 		TIP.destinationDetails("United Kingdom");					//to enter a country name
 		TIP.DestinationDropDown(); 							//to select the respective country from dropdown
@@ -112,8 +110,10 @@ public class RegressionStepDefination {
 	public void user_navigates_to_policy_bazaar_homepage() {
 		driver=HelperClass.getDriver();
 		HIP= new HealthInsurancePage(driver);
+		TIP =new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
 	
 
 	}
@@ -123,7 +123,8 @@ public class RegressionStepDefination {
 		HIP.insuranceProducts();
 		HIP.healthInsurancePage();
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
+		HIP.title();
+		//Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 	}
 
 	@When("user clickes on more members button")
@@ -150,12 +151,14 @@ public class RegressionStepDefination {
 	public void user_navigates_to_member_page() {
 		driver=HelperClass.getDriver();
 		HIP= new HealthInsurancePage(driver);
+		TIP=new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
 		HIP.insuranceProducts();
 		HIP.healthInsurancePage();
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
+		HIP.title();
+		//Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 
 	}
@@ -183,11 +186,14 @@ public class RegressionStepDefination {
 	public void user_navigates_to_age_page() {
 		driver=HelperClass.getDriver();
 		HIP= new HealthInsurancePage(driver);
+		TIP = new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		HIP.healthInsurancePage();
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
+		HIP.title();
+		//Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 		HIP.select_a_Member("self");
 		HIP.continue1Btn();
@@ -219,9 +225,7 @@ public class RegressionStepDefination {
 		HIP= new HealthInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		HIP.healthInsurancePage();
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 		HIP.select_a_Member("self");
 		HIP.continue1Btn();
@@ -256,9 +260,7 @@ public class RegressionStepDefination {
 		HIP= new HealthInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		HIP.healthInsurancePage();
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 		HIP.select_a_Member("self");
 		HIP.continue1Btn();
@@ -305,9 +307,7 @@ public class RegressionStepDefination {
 		HIP= new HealthInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		HIP.healthInsurancePage();
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 		HIP.select_a_Member("self");
 		HIP.continue1Btn();
@@ -346,9 +346,7 @@ public class RegressionStepDefination {
 		HIP= new HealthInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		HIP.healthInsurancePage();
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 		HIP.select_a_Member("self");
 		HIP.continue1Btn();

@@ -7,7 +7,6 @@ import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import com.utils.HelperClass;
 import com.utils.excelUtils;
@@ -35,7 +34,8 @@ public class EndToEndStepDefination {
 		driver=HelperClass.getDriver();
 		TIP = new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
 	
 	}
 
@@ -93,8 +93,10 @@ public class EndToEndStepDefination {
 	public void user_navigated_to_policy_bazaar_application() {
 		driver=HelperClass.getDriver();
 		CIP=new CarInsurancePage(driver);
+		TIP=new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 	
 	}
 
@@ -159,8 +161,10 @@ public class EndToEndStepDefination {
 	public void user_navigated_to_policy_bazaar_homepage() {
 		driver=HelperClass.getDriver();
 		HIP= new HealthInsurancePage(driver);
+		TIP=new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
 	
 	}
 
@@ -182,7 +186,8 @@ public class EndToEndStepDefination {
 		HIP.insuranceProducts();
 		HIP.healthInsurancePage();
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
+		HIP.title();
+		//Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 	}
 
 	@When("user  provided valid data with {string},{string},{string},{string},{string}and click on continue")

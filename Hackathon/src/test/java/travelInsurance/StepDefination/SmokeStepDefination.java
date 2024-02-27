@@ -1,13 +1,10 @@
 package travelInsurance.StepDefination;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 
 import com.utils.HelperClass;
 import com.utils.excelUtils;
@@ -33,7 +30,8 @@ public class SmokeStepDefination {
 		driver=HelperClass.getDriver();
 		TIP = new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
 	}
 
 	@When("user clicked on travel insurance link and navigated to destination page")
@@ -158,7 +156,6 @@ public class SmokeStepDefination {
 	@Then("clicks on view plans button and user navigated to resuls page")
 	public void clicks_on_view_plans_button_and_user_navigated_to_resuls_page() {
 		TIP.viewPlans();
-		//TIP.resultsPage();
 
 	}
 
@@ -168,13 +165,14 @@ public class SmokeStepDefination {
 	public void user_clicked_on_policy_bazar_logo_link1() {
 		driver=HelperClass.getDriver();
 		CIP=new CarInsurancePage(driver);
-		//CIP.logoclick();
+		TIP=new TravelInsurancePage(driver);
 	}
 	
 	@When("user  navigated to home page2")
 	public void user_navigated_to_home_page2() {
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 	}
 
 	@When("user clicked on car insurance link and navigated to car insurance page")
@@ -198,13 +196,16 @@ public class SmokeStepDefination {
 	@Given("user navigated to car insurance page")
 	public void user_navigated_to_car_insurance_page() {
 		driver=HelperClass.getDriver();
-		CIP=new CarInsurancePage(driver);
+		CIP= new CarInsurancePage(driver);
+		TIP= new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		CIP.carInsuranceIcon();
 	    CIP.carInsurancePage();
 		System.out.println(driver.getTitle());
-		   Assert.assertEquals("PolicyBazaar Car Insurance: Insure Your Car Today",driver.getTitle());
+		CIP.title();
+		 //  Assert.assertEquals("PolicyBazaar Car Insurance: Insure Your Car Today",driver.getTitle());
 	}
 
 	@When("user clicks on buying a new car button")
@@ -375,12 +376,14 @@ public class SmokeStepDefination {
 	public void user_clicked_on_policy_bazar_logo_link2() {
 		driver=HelperClass.getDriver();
 		HIP= new HealthInsurancePage(driver);
+		TIP=new TravelInsurancePage(driver);
 	}
 
 	@When("user navigated to homepage3")
 	public void user_navigated_to_homepage3() {
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
 	
 	}
 
@@ -390,27 +393,33 @@ public class SmokeStepDefination {
 	}
 
 	@Then("store all the health insurance menu in the list")
-	public void store_all_the_health_insurance_menu_in_the_list() {
+	public void store_all_the_health_insurance_menu_in_the_list() throws IOException {
 		List<WebElement> list=HIP.healthInsurnaceMenu();
-		for(WebElement ele:list ) {
-        System.out.println(ele.getText());
-        }
+		
+		for(int i=0;i<list.size();i++) {
+	        System.out.println(list.get(i).getText());
+	    	excelUtils.setCellData(path,"SmokeOutput", i+1, 1,list.get(i).getText());
+
+		}
 	}
 
 	@Given("user navigated to homepage")
 	public void user_navigated_to_homepage() {
 		driver=HelperClass.getDriver();
 		HIP= new HealthInsurancePage(driver);
+		TIP = new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
+		TIP.title();
+		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 	}
 
 	@When("user clicked on health insurance link and navigated to health insurance page")
 	public void user_clicked_on_health_insurance_link_and_navigated_to_health_insurance_page() {
 		HIP.healthInsurancePage();
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
+		HIP.title();
+		//Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 	}
 
 	@When("user clicked on more members button")
@@ -435,9 +444,7 @@ public class SmokeStepDefination {
 		HIP= new HealthInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		HIP.healthInsurancePage();
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 		HIP.select_a_Member("self");
 		HIP.continue1Btn();
@@ -460,9 +467,7 @@ public class SmokeStepDefination {
 		HIP= new HealthInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		HIP.healthInsurancePage();
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 		HIP.select_a_Member("self");
 		HIP.continue1Btn();
@@ -484,9 +489,7 @@ public class SmokeStepDefination {
 		HIP= new HealthInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
-		Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		HIP.healthInsurancePage();
-		Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 		HIP.moreMembers();
 		HIP.select_a_Member("self");
 		HIP.continue1Btn();

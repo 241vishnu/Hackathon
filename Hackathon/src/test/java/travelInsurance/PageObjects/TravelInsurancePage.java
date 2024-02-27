@@ -5,7 +5,6 @@ import java.time.Duration;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -165,6 +164,12 @@ public class TravelInsurancePage extends BasePage{
   	WebElement logo;
   	
     JavascriptExecutor js = (JavascriptExecutor) driver;
+    
+    //method to assert with title
+    public void title() {
+    	String t= "Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car";
+    	Assert.assertEquals(t,driver.getTitle().toString());
+    }
 
     //method to click on travel insuranc icon
   	public void travelInsuranceIcon() {
