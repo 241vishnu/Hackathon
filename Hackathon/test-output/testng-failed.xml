@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="chromeTest(failed)">
-    <parameter name="browser" value="Chrome"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="travelInsurance.TestRunner.InsuranceTestRunner">
         <methods>
-          <include name="setUp"/>
           <include name="setUpClass"/>
-          <include name="tearDown"/>
           <include name="tearDownClass"/>
-          <include name="runScenario"/>
-          <include name="screenshot"/>
+          <include name="runScenario" invocation-numbers="9"/>
         </methods>
       </class> <!-- travelInsurance.TestRunner.InsuranceTestRunner -->
     </classes>
-  </test> <!-- chromeTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

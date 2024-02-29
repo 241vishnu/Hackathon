@@ -31,17 +31,19 @@ public class SmokeStepDefination {
 		TIP = new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		TIP.title();
-		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());  
+    	HelperClass.getLogger().info("Navigating to policy bazaar home page.....");
 	}
 
 	@When("user clicked on travel insurance link and navigated to destination page")
 	public void user_clicked_on_travel_insurance_link_and_navigated_to_destination_page() {
+    	HelperClass.getLogger().info("clicking on travel insurance icon.....");
 		TIP.travelInsuranceIcon();									//to click travel insurance icon
 		TIP.destinationPage();										//to verify destination page
 	}
 
 	@When("user Entered valid destination place in text box")
 	public void user_entered_valid_destination_place_in_text_box() {
+    	HelperClass.getLogger().info("Entering Destination country .....");
 		TIP.destinationDetails("United Kingdom");					//to enter a country name
 	}
 
@@ -62,6 +64,7 @@ public class SmokeStepDefination {
 
 	@When("user selects the start and end dates from the tabel")
 	public void user_selects_the_start_and_end_dates_from_the_tabel() {
+    	HelperClass.getLogger().info("Entering the dates.....");
 		TIP.tripEnterDates();									//to enter start and end dates
 	}
 
@@ -85,6 +88,7 @@ public class SmokeStepDefination {
 
 	@When("user selects {string} people")
 	public void user_selects_people(String string) {
+    	HelperClass.getLogger().info("Entering the Number of travellers and their ages.....");
 		TIP.no_of_Travellers(string);							//to select 'n' people
 	}
 
@@ -116,6 +120,8 @@ public class SmokeStepDefination {
 
 	@When("user selects either of value i.e yes\\/no")
 	public void user_selects_either_of_value_i_e_yes_no() {
+    	HelperClass.getLogger().info("Selecting previous medical history.....");
+
 		TIP.checkMedicalHistory();								//to select 'No' check box
 	}
 	@Then("clicks on next button4")
@@ -145,6 +151,7 @@ public class SmokeStepDefination {
 
 	@When("user enters valid phone number in text box")
 	public void user_enters_valid_phone_number_in_text_box() {
+    	HelperClass.getLogger().info("Entering contact details.....");
 		TIP.enterMobileNumber("9785678954");
 	}
 
@@ -156,7 +163,7 @@ public class SmokeStepDefination {
 	@Then("clicks on view plans button and user navigated to resuls page")
 	public void clicks_on_view_plans_button_and_user_navigated_to_resuls_page() {
 		TIP.viewPlans();
-
+    	HelperClass.getLogger().info("Navigating to results page.....");
 	}
 
 										//******CAR INSURANCE******//
@@ -166,28 +173,32 @@ public class SmokeStepDefination {
 		driver=HelperClass.getDriver();
 		CIP=new CarInsurancePage(driver);
 		TIP=new TravelInsurancePage(driver);
+    	HelperClass.getLogger().info("Navigating to policy bazaar home page.....");
+
 	}
 	
 	@When("user  navigated to home page2")
 	public void user_navigated_to_home_page2() {
 		System.out.println(driver.getTitle());
 		TIP.title();
-		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 	}
 
 	@When("user clicked on car insurance link and navigated to car insurance page")
 	public void user_clicked_on_car_insurance_link_and_navigated_to_car_insurance_page() {
+    	HelperClass.getLogger().info("clicking on car insurance icon.....");
 		 	CIP.carInsuranceIcon();
 		    CIP.carInsurancePage();
 	}
 
 	@When("user clicks on view prices button without entering car number in text box")
 	public void user_clicks_on_view_prices_button_without_entering_car_number_in_text_box() {
+    	HelperClass.getLogger().info("clicking on view prices button without car number.....");
 		   CIP.viewPrices();
 	}
 
 	@Then("user captures the error message")
 	public void user_captures_the_error_message() throws IOException {
+    	HelperClass.getLogger().info("Error message captured.....");
 		   System.out.println(CIP.errorPage());
 		   excelUtils.setCellData(path,"SmokeOutput",1,0,CIP.errorPage());
 
@@ -200,16 +211,15 @@ public class SmokeStepDefination {
 		TIP= new TravelInsurancePage(driver);
 		System.out.println(driver.getTitle());
 		TIP.title();
-		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 		CIP.carInsuranceIcon();
 	    CIP.carInsurancePage();
 		System.out.println(driver.getTitle());
 		CIP.title();
-		 //  Assert.assertEquals("PolicyBazaar Car Insurance: Insure Your Car Today",driver.getTitle());
 	}
 
 	@When("user clicks on buying a new car button")
 	public void user_clicks_on_buying_a_new_car_button() {
+    	HelperClass.getLogger().info("clicking on new car button.....");
 		   CIP.newCar();
 	}
 
@@ -220,6 +230,7 @@ public class SmokeStepDefination {
 
 	@Then("click on a city and select a RTO number")
 	public void click_on_a_city_and_select_a_rto_number() {
+    	HelperClass.getLogger().info("Selecting city and rto.....");
 		   CIP.rtoDetails("chennai");
 	}
 
@@ -233,6 +244,7 @@ public class SmokeStepDefination {
 
 	@Then("user selects a brand")
 	public void user_selects_a_brand() {
+    	HelperClass.getLogger().info("Selecting brand name.....");
 		   CIP.brandNameDetails("Tata");
 	}
 
@@ -248,6 +260,7 @@ public class SmokeStepDefination {
 
 	@Then("user selects the model name")
 	public void user_selects_the_model_name() {
+    	HelperClass.getLogger().info("Selecting model name.....");
 		   CIP.modelNameDetails("Nexon");
 	}
 
@@ -265,6 +278,7 @@ public class SmokeStepDefination {
 
 	@Then("user selects fueltype name")
 	public void user_selects_fueltype_name() {
+    	HelperClass.getLogger().info("Selecting fuel type.....");
 		   CIP.fuelTypeDetails("Petrol");
 	}
 
@@ -284,6 +298,7 @@ public class SmokeStepDefination {
 
 	@Then("user selects a variant name")
 	public void user_selects_a_variant_name() {
+    	HelperClass.getLogger().info("Selecting variant type.....");
 		   CIP.variantTypeDetails();
 	}
 	
@@ -305,6 +320,8 @@ public class SmokeStepDefination {
 
 	@Then("capture error messages")
 	public void capture_error_messages() throws IOException {
+    	HelperClass.getLogger().info("Clicking on view prices and captureing error messages.....");
+
 		System.out.println(CIP.nameErrorStatement());
 		System.out.println(CIP.mailErrorStatement());
 		System.out.println(CIP.phoneErrorStatement());
@@ -339,6 +356,7 @@ public class SmokeStepDefination {
 
 	@Then("capture error message invalid phone")
 	public void capture_error_message_invalid_phone() throws IOException {
+    	HelperClass.getLogger().info("Entering invalid phone number.....");
 		System.out.println(CIP.phoneErrorStatement());
 		excelUtils.setCellData(path,"SmokeOutput",5,0,CIP.phoneErrorStatement());
 
@@ -364,6 +382,7 @@ public class SmokeStepDefination {
 	}
 	@Then("capture error message invalid mail")
 	public void capture_error_message_invalid_mail() throws IOException {
+    	HelperClass.getLogger().info("Entering invalid email.....");
 		System.out.println(CIP.mailErrorStatement());
 		excelUtils.setCellData(path,"SmokeOutput",6,0,CIP.mailErrorStatement());
 
@@ -377,25 +396,26 @@ public class SmokeStepDefination {
 		driver=HelperClass.getDriver();
 		HIP= new HealthInsurancePage(driver);
 		TIP=new TravelInsurancePage(driver);
+    	HelperClass.getLogger().info("Navigating to policy bazaar home page.....");
 	}
 
 	@When("user navigated to homepage3")
 	public void user_navigated_to_homepage3() {
 		System.out.println(driver.getTitle());
 		TIP.title();
-		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle()); 
 	
 	}
 
 	@When("user clicked on insurance products dropdown")
 	public void user_clicked_on_insurance_products_dropdown() {
+    	HelperClass.getLogger().info("Hovering to insurance products.....");
 		HIP.insuranceProducts();
 	}
 
 	@Then("store all the health insurance menu in the list")
 	public void store_all_the_health_insurance_menu_in_the_list() throws IOException {
+    	HelperClass.getLogger().info("Storing the health insurance menu in excel.....");
 		List<WebElement> list=HIP.healthInsurnaceMenu();
-		
 		for(int i=0;i<list.size();i++) {
 	        System.out.println(list.get(i).getText());
 	    	excelUtils.setCellData(path,"SmokeOutput", i+1, 1,list.get(i).getText());
@@ -411,15 +431,14 @@ public class SmokeStepDefination {
 		System.out.println(driver.getTitle());
 		HIP.insuranceProducts();
 		TIP.title();
-		//Assert.assertEquals("Insurance - Compare & Buy Insurance Plans – Health, Term, Life, Car", driver.getTitle());
 	}
 
 	@When("user clicked on health insurance link and navigated to health insurance page")
 	public void user_clicked_on_health_insurance_link_and_navigated_to_health_insurance_page() {
+    	HelperClass.getLogger().info("Clicking on health insurance link.....");
 		HIP.healthInsurancePage();
 		System.out.println(driver.getTitle());
 		HIP.title();
-		//Assert.assertEquals("Health Insurance: Compare & Buy Medical Insurance Plans @ ₹8/Day*", driver.getTitle());
 	}
 
 	@When("user clicked on more members button")
@@ -429,6 +448,7 @@ public class SmokeStepDefination {
 
 	@When("user clicks on select self as a member")
 	public void user_clicks_on_select_self_as_a_member() {
+    	HelperClass.getLogger().info("Selecting a member.....");
 		HIP.select_a_Member("self");
 	}
 	
@@ -453,6 +473,7 @@ public class SmokeStepDefination {
 
 	@When("user selects age from drop down")
 	public void user_selects_age_from_drop_down() {
+    	HelperClass.getLogger().info("Selecting age of the member.....");
 		HIP.selectAge("28");
 	}
 	@Then("user clicks on continue2 button")
@@ -480,6 +501,7 @@ public class SmokeStepDefination {
 
 	@Then("user selects city from drop down and clicks on continue3 button")
 	public void user_selects_city_from_drop_down_and_clicks_on_continue3_button() {
+    	HelperClass.getLogger().info("Selecting city of the member.....");
 		HIP.selectCity("Hyderabad(Telangana)");
 	}
 
@@ -496,15 +518,14 @@ public class SmokeStepDefination {
 		HIP.agePage();
 		HIP.selectAge("28");
 		HIP.continue2Btn();
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		HIP.cityPage();
 		HIP.selectCity("Hyderabad(Telangana)");
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		HIP.contactPage();
 	}
 	
 	@When("user enters valid name and phone number in textboxes")
 	public void user_enters_valid_name_and_phone_number_in_textboxes() {
+    	HelperClass.getLogger().info("Entering contact details of the member.....");
 		HIP.enterName("ram");
 		HIP.enterPhoneNumber("8798646474");
 	}

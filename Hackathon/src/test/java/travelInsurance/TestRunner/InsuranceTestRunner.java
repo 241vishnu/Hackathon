@@ -7,8 +7,8 @@ import io.cucumber.testng.CucumberOptions;
  
 //@RunWith(Cucumber.class)
 @CucumberOptions( 
-					//features= {"src//test//resources//Features//Insurances_end_to_end.feature"}, 
-					features= {"src//test//resources//Features//Insurances_smoke.feature"},
+					features= {"src//test//resources//Features//Insurances_end_to_end.feature"}, 
+					//features= {"src//test//resources//Features//Insurances_smoke.feature"},
 					//features= {"src//test//resources//Features//Insurances_regression.feature"},
 					//features= {"src//test//resources//Features"},
 
