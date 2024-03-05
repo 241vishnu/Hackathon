@@ -2,30 +2,41 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T09:20:31 IST" name="Default suite" finished-at="2024-02-29T09:23:40 IST" duration-ms="188652">
+  <suite started-at="2024-03-04T10:31:37 IST" name="Suite" finished-at="2024-03-04T10:35:40 IST" duration-ms="243280">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:travelInsurance.TestRunner.InsuranceTestRunner@6e9a5ed8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-29T09:20:31 IST" name="Default test" finished-at="2024-02-29T09:23:40 IST" duration-ms="188652">
-      <class name="travelInsurance.TestRunner.InsuranceTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:travelInsurance.TestRunner.InsuranceTestRunner@6e9a5ed8]" started-at="2024-02-29T09:20:31 IST" name="setUpClass" finished-at="2024-02-29T09:20:35 IST" duration-ms="4076" status="PASS">
+    <test started-at="2024-03-04T10:31:37 IST" name="EdgeTest" finished-at="2024-03-04T10:35:40 IST" duration-ms="243280">
+      <class name="com.Policybazaar.TestRunner.InsurancesTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:31:37 IST" name="setUpClass" finished-at="2024-03-04T10:31:40 IST" duration-ms="2936" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3a42145]]>
+                <![CDATA[org.testng.TestRunner@cc91fe3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:travelInsurance.TestRunner.InsuranceTestRunner@6e9a5ed8]" started-at="2024-02-29T09:20:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T09:21:45 IST" duration-ms="69110" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:31:40 IST" name="setUp" finished-at="2024-03-04T10:32:17 IST" duration-ms="36808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Travel insurance"]]>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:32:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-04T10:32:57 IST" duration-ms="39853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User validates  Travel insurance page in policy bazaar website"]]>
               </value>
             </param>
             <param index="1">
@@ -37,11 +48,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:travelInsurance.TestRunner.InsuranceTestRunner@6e9a5ed8]" started-at="2024-02-29T09:21:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T09:22:20 IST" duration-ms="35597" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:32:57 IST" name="tearDown" finished-at="2024-03-04T10:33:03 IST" duration-ms="6441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:33:03 IST" name="setUp" finished-at="2024-03-04T10:33:14 IST" duration-ms="10652" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Car insurance"]]>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:33:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-04T10:33:32 IST" duration-ms="18557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User validates  car insurance page in policy bazaar website"]]>
               </value>
             </param>
             <param index="1">
@@ -53,11 +79,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:travelInsurance.TestRunner.InsuranceTestRunner@6e9a5ed8]" started-at="2024-02-29T09:22:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T09:22:45 IST" duration-ms="24490" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:33:32 IST" name="tearDown" finished-at="2024-03-04T10:33:39 IST" duration-ms="6948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:33:39 IST" name="setUp" finished-at="2024-03-04T10:33:53 IST" duration-ms="13702" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Health Insurance menu"]]>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:33:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-04T10:33:59 IST" duration-ms="5895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User validates  health insurances menu  in policy bazaar website"]]>
               </value>
             </param>
             <param index="1">
@@ -69,11 +110,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:travelInsurance.TestRunner.InsuranceTestRunner@6e9a5ed8]" started-at="2024-02-29T09:22:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T09:23:35 IST" duration-ms="50199" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:33:59 IST" name="tearDown" finished-at="2024-03-04T10:34:05 IST" duration-ms="5834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:34:05 IST" name="setUp" finished-at="2024-03-04T10:34:17 IST" duration-ms="12502" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Health Insurance"]]>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:34:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-04T10:35:24 IST" duration-ms="67098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User validates  health insurance page in policy bazaar website"]]>
               </value>
             </param>
             <param index="1">
@@ -85,11 +141,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:travelInsurance.TestRunner.InsuranceTestRunner@6e9a5ed8]" started-at="2024-02-29T09:23:35 IST" name="tearDownClass" finished-at="2024-02-29T09:23:40 IST" duration-ms="4946" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:35:24 IST" name="tearDown" finished-at="2024-03-04T10:35:33 IST" duration-ms="9220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Policybazaar.TestRunner.InsurancesTestRunner@8462f31]" started-at="2024-03-04T10:35:33 IST" name="tearDownClass" finished-at="2024-03-04T10:35:40 IST" duration-ms="6678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- travelInsurance.TestRunner.InsuranceTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.Policybazaar.TestRunner.InsurancesTestRunner -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- Suite -->
 </testng-results>

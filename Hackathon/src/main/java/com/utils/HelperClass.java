@@ -22,8 +22,10 @@ public class HelperClass {
 	static Properties p;
 	static Logger logger;
 
+	  public static ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
+
 	// method for initializing browser
-	public static WebDriver initialBrowser() throws IOException {
+	public static WebDriver initialBrowser(String browser) throws IOException {
 		if (getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 
@@ -35,8 +37,8 @@ public class HelperClass {
 			} else {
 				System.out.println("No matching OS..");
 			}
-			// browser
-			switch (getProperties().getProperty("browser").toLowerCase()) {
+			// browser getProperties().getProperty("browser")
+			switch (browser.toLowerCase()) {
 			case "chrome":
 				capabilities.setBrowserName("chrome");
 				break;
@@ -50,7 +52,7 @@ public class HelperClass {
 			driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
 
 		} else if (getProperties().getProperty("execution_env").equalsIgnoreCase("local")) {
-			switch (getProperties().getProperty("browser").toLowerCase()) {
+			switch (browser.toLowerCase()) {
 			case "chrome":
 				driver = new ChromeDriver();
 				break;
@@ -62,14 +64,24 @@ public class HelperClass {
 				driver = null;
 			}
 		}
-		return driver;
+		driverThreadLocal.set(driver);
+		driverThreadLocal.get().manage().window().maximize();
+	    driverThreadLocal.get().get(getProperties().getProperty("baseurl"));
+	    return driverThreadLocal.get();
 
 	}
 
 	// method to return the current driver
 	public static WebDriver getDriver() {
-		return driver;
+	    return driverThreadLocal.get();
 	}
+	public static void quitDriver()
+		{
+			WebDriver driver = driverThreadLocal.get();
+		    if (driver != null) {
+		      driver.quit();
+		    }
+		}
 
 	// method to load properties file
 	public static Properties getProperties() throws IOException {

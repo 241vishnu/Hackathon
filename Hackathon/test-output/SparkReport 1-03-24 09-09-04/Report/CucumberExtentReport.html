@@ -1,0 +1,3239 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 1, 2024 09:09:03 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@smoke,</a><a class="dropdown-item" href="#">@smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Insurances_end_to_end</p>
+            <p class="text-sm">
+              <span>9:09:24 am</span> / <span>00:02:01:298</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Insurances_end_to_end</h5>
+<span class='badge badge-success'>03.01.2024 9:09:24 am</span>
+<span class='badge badge-danger'>03.01.2024 9:11:26 am</span>
+<span class='badge badge-default'>00:02:01:298</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User validates  Travel insurance page in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>User validates  Travel insurance page in policy bazaar website</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to policy bazaar home</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  Travel insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicked on travel insurance link and navigates to destination page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  Travel insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provided valid data with "United Kingdom","2","9876575345" clicks on view plans button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  Travel insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects the students plan and sorts from low to high in the filters</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  Travel insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded4.png' src="../Screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user collects first three insurance plans along with insurance provider</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  Travel insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded5.png' src="../Screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>User validates  car insurance page in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>User validates  car insurance page in policy bazaar website</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigated to policy bazaar application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  car insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded6.png' src="../Screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicked on car insurance link and navigates to car insurance page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  car insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded7.png' src="../Screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicked on view prices button without entering car number in text box</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  car insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded8.png' src="../Screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user captures the error message of car insurance page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  car insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded9.png' src="../Screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicked on buying a new car button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  car insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded10.png' src="../Screenshots/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provided valid dummy data with "Chennai","Tata","Nexon","petrol"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  car insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded11.png' src="../Screenshots/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provide invalid contact details "ram","abcgamil.com","6784367565"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  car insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded12.png' src="../Screenshots/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then click on view price and capture error message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  car insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded13.png' src="../Screenshots/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>User validates  health insurances menu  in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.EndToEndStepDefination.user_navigated_to_policy_bazaar_homepage()">
+                <span>Given user navigated to policy bazaar homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  health insurances menu  in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded14.png' src="../Screenshots/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.EndToEndStepDefination.user_clicked_on_insurance_products_drop_down()">
+                <span>When user clicked on insurance products drop down</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  health insurances menu  in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded15.png' src="../Screenshots/embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.EndToEndStepDefination.store_all_the_health_insurances_menu_in_the_list()">
+                <span>Then store all the health insurances menu in the list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  health insurances menu  in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded16.png' src="../Screenshots/embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>User validates  health insurance page in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>User validates  health insurance page in policy bazaar website</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigated to policy bazaar homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  health insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded17.png' src="../Screenshots/embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on health insurance link and navigated to health insurance page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  health insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded18.png' src="../Screenshots/embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user  provided valid data with "self","34","Hyderabad(Telangana)","arjun","9769878756"and click on continue</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  health insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded19.png' src="../Screenshots/embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then sort results as low to high and capture the first three insurance packages and providers</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>User validates  health insurance page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded20.png' src="../Screenshots/embedded20.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="49"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Insurance_regression</p>
+            <p class="text-sm">
+              <span>9:11:44 am</span> / <span>00:04:46:890</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Insurance_regression</h5>
+<span class='badge badge-success'>03.01.2024 9:11:44 am</span>
+<span class='badge badge-danger'>03.01.2024 9:16:31 am</span>
+<span class='badge badge-default'>00:04:46:890</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>user validates Travel insurance contact details page in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigate_to_contact_details_page()">
+                <span>Given user navigate to contact details page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance contact details page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded21.png' src="../Screenshots/embedded21.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_enters_invalid_phone_number()">
+                <span>When user enters invalid phone number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance contact details page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded22.png' src="../Screenshots/embedded22.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_captures_error_message()">
+                <span>Then user captures error message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance contact details page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded23.png' src="../Screenshots/embedded23.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>user validates Travel Insurance results in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigated_travel_insurance_results_page()">
+                <span>Given user navigated travel insurance results page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel Insurance results in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded24.png' src="../Screenshots/embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.clicks_on_filter_plan_type_and_selects_student_plan_radio_button()">
+                <span>When clicks on filter plan type and selects student plan radio button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel Insurance results in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded25.png' src="../Screenshots/embedded25.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_confirms_the_travellers_by_selecting_their_age_and_enters_the_no_of_days_and_clicks_on_apply_button()">
+                <span>And user confirms the travellers by selecting their age and enters the no of days and clicks on apply button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel Insurance results in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded26.png' src="../Screenshots/embedded26.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_ckicks_on_sortby_filter_and_selects_premium_low_to_high_radio_button()">
+                <span>And user ckicks on sortby filter and selects premium low to high radio button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel Insurance results in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded27.png' src="../Screenshots/embedded27.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_collects_the_first_three_insurance_plans_along_with_insurance_provider()">
+                <span>Then user collects the first three insurance plans along with insurance provider</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel Insurance results in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded28.png' src="../Screenshots/embedded28.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>user validates the health insurance-members page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigates_to_policy_bazaar_homepage()">
+                <span>Given user navigates to policy bazaar homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates the health insurance-members page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded29.png' src="../Screenshots/embedded29.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clickes_on_health_insurance_link_and_navigates_to_health_insurance_page()">
+                <span>When user clickes on health insurance link and navigates to health insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates the health insurance-members page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded30.png' src="../Screenshots/embedded30.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clickes_on_more_members_button()">
+                <span>And user clickes on more members button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates the health insurance-members page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded31.png' src="../Screenshots/embedded31.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clicks_directly_on_continue1_button()">
+                <span>And user clicks directly on continue1 button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates the health insurance-members page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded32.png' src="../Screenshots/embedded32.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_captures_error_message1()">
+                <span>Then user captures error message1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates the health insurance-members page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded33.png' src="../Screenshots/embedded33.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="79"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance member page in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigates_to_member_page()">
+                <span>Given user navigates to member page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance member page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded34.png' src="../Screenshots/embedded34.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clicks_on_select_self_as_a_member_and_clicks_on_continue1_button()">
+                <span>When user clicks on select self as a member and clicks on continue1 button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance member page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded35.png' src="../Screenshots/embedded35.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clicks_directly_on_continue2_button()">
+                <span>And user clicks directly on continue2 button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance member page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded36.png' src="../Screenshots/embedded36.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.capture_error_message2()">
+                <span>Then capture error message2</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance member page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded37.png' src="../Screenshots/embedded37.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance age page in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigates_to_age_page()">
+                <span>Given user navigates to age page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance age page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded38.png' src="../Screenshots/embedded38.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_selects_age_from_drop_down_and_clicks_on_continue2_button()">
+                <span>When user selects age from drop down and clicks on continue2 button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance age page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded39.png' src="../Screenshots/embedded39.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clicks_directly_on_continue3()">
+                <span>And user clicks directly on continue3</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance age page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded40.png' src="../Screenshots/embedded40.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.capture_error_message3()">
+                <span>Then capture error message3</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance age page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded41.png' src="../Screenshots/embedded41.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="97"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance city page in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigates_to_city_page()">
+                <span>Given user navigates to city page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance city page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded42.png' src="../Screenshots/embedded42.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_selects_city_from_dropdown_and_clicks_on_continue3_button()">
+                <span>When user selects city from dropdown and clicks on continue3 button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance city page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded43.png' src="../Screenshots/embedded43.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clicks_directly_on_continue4()">
+                <span>And user clicks directly on continue4</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance city page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded44.png' src="../Screenshots/embedded44.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.capture_error_message4()">
+                <span>Then capture error message4</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance city page in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded45.png' src="../Screenshots/embedded45.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="106"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance contact page with positive name in policy bazaar website</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigates_to_contact_page()">
+                <span>Given user navigates to contact page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positive name in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded46.png' src="../Screenshots/embedded46.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_enters_valid_name_and_clicks_on_continue4()">
+                <span>When user enters valid name and clicks on continue4</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positive name in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded47.png' src="../Screenshots/embedded47.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.capture_error_message5()">
+                <span>Then capture error message5</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positive name in policy bazaar website
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded48.png' src="../Screenshots/embedded48.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance contact page with positve name and negative phone number</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigates_to_contact_page()">
+                <span>Given user navigates to contact page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positve name and negative phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded49.png' src="../Screenshots/embedded49.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_enters_valid_name_and_invalid_phone_number_and_clicks_on_continue4()">
+                <span>When user enters valid name and invalid phone number and clicks on continue4</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positve name and negative phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded50.png' src="../Screenshots/embedded50.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.capture_error_message6()">
+                <span>Then capture error message6</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positve name and negative phone number
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded51.png' src="../Screenshots/embedded51.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="120"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance result page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigates_to_medical_illnes_page()">
+                <span>Given user navigates to medical illnes page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance result page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded52.png' src="../Screenshots/embedded52.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clicks_on_viewplans_directly()">
+                <span>When user clicks on viewplans directly</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance result page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded53.png' src="../Screenshots/embedded53.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.capture_error_message7()">
+                <span>Then capture error message7</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance result page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded54.png' src="../Screenshots/embedded54.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>user validates Health Insurance results in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_navigated_to_health_insurances_results_page()">
+                <span>Given user navigates to health insurances results page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health Insurance results in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded55.png' src="../Screenshots/embedded55.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.user_clicks_on_no_checkbox()">
+                <span>When user clicks on No checkbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health Insurance results in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded56.png' src="../Screenshots/embedded56.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.RegressionStepDefination.first_three_inusurances_prices_and_insurance_providers_are_stored_in_list()">
+                <span>Then first three inusurances prices and insurance providers are stored in list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health Insurance results in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded57.png' src="../Screenshots/embedded57.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="134"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Insurances_smoke</p>
+            <p class="text-sm">
+              <span>9:16:49 am</span> / <span>00:08:33:195</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Insurances_smoke</h5>
+<span class='badge badge-success'>03.01.2024 9:16:49 am</span>
+<span class='badge badge-danger'>03.01.2024 9:25:23 am</span>
+<span class='badge badge-default'>00:08:33:195</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=134</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>user validates Travel insurance destination page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_policy_bazaar_homepage()">
+                <span>Given user navigated policy bazaar homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance destination page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded58.png' src="../Screenshots/embedded58.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicked_on_travel_insurance_link_and_navigated_to_destination_page()">
+                <span>When user clicked on travel insurance link and navigated to destination page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance destination page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded59.png' src="../Screenshots/embedded59.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_entered_valid_destination_place_in_text_box()">
+                <span>When user Entered valid destination place in text box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance destination page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded60.png' src="../Screenshots/embedded60.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_the_place_from_dropdown_and_clicks_next_button1()">
+                <span>Then user selects the place from dropdown and clicks next button1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance destination page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded61.png' src="../Screenshots/embedded61.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="144"><span class="badge log pass-bg mr-2">Pass</span>user validates Travel insurance trip date page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_trip_dates_page()">
+                <span>Given user navigated to trip dates page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance trip date page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded62.png' src="../Screenshots/embedded62.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_the_start_and_end_dates_from_the_tabel()">
+                <span>When user selects the start and end dates from the tabel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance trip date page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded63.png' src="../Screenshots/embedded63.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.clicks_on_next_button2()">
+                <span>Then clicks on next button2</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance trip date page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded64.png' src="../Screenshots/embedded64.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="151"><span class="badge log pass-bg mr-2">Pass</span>user validates Travel insurance traveller page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_traveller_page()">
+                <span>Given user navigated to traveller page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance traveller page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded65.png' src="../Screenshots/embedded65.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_people(java.lang.String)">
+                <span>When user selects "2" people</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance traveller page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded66.png' src="../Screenshots/embedded66.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.selects_their_respective_ages()">
+                <span>And selects their respective ages</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance traveller page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded67.png' src="../Screenshots/embedded67.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.clicks_on_next_button3()">
+                <span>Then clicks on next button3</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance traveller page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded68.png' src="../Screenshots/embedded68.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="160"><span class="badge log pass-bg mr-2">Pass</span>user validates Travel insurance medical history page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_medical_history_page()">
+                <span>Given user navigated to medical history page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance medical history page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded69.png' src="../Screenshots/embedded69.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_either_of_value_i_e_yes_no()">
+                <span>When user selects either of value i.e yes/no</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance medical history page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded70.png' src="../Screenshots/embedded70.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.clicks_on_next_button4()">
+                <span>Then clicks on next button4</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance medical history page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded71.png' src="../Screenshots/embedded71.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="167"><span class="badge log pass-bg mr-2">Pass</span>user validates Travel insurance results page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_contact_details_page()">
+                <span>Given user navigated to contact details page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance results page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded72.png' src="../Screenshots/embedded72.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_enters_valid_phone_number_in_text_box()">
+                <span>When user enters valid phone number in text box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance results page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded73.png' src="../Screenshots/embedded73.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicks_button_to_uncheckbox_the_whatsapp_updates()">
+                <span>And user clicks button to uncheckbox the whatsapp updates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance results page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded74.png' src="../Screenshots/embedded74.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.clicks_on_view_plans_button_and_user_navigated_to_resuls_page()">
+                <span>Then clicks on view plans button and user navigated to resuls page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Travel insurance results page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded75.png' src="../Screenshots/embedded75.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="176"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance home page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicked_on_policy_bazar_logo_link1()">
+                <span>Given user clicked on policy bazar logo link1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance home page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded76.png' src="../Screenshots/embedded76.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_home_page2()">
+                <span>When user  navigated to home page2</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance home page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded77.png' src="../Screenshots/embedded77.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicked_on_car_insurance_link_and_navigated_to_car_insurance_page()">
+                <span>And user clicked on car insurance link and navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance home page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded78.png' src="../Screenshots/embedded78.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicks_on_view_prices_button_without_entering_car_number_in_text_box()">
+                <span>And user clicks on view prices button without entering car number in text box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance home page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded79.png' src="../Screenshots/embedded79.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_captures_the_error_message()">
+                <span>Then user captures the error message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance home page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded80.png' src="../Screenshots/embedded80.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="187"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance RTO page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_car_insurance_page()">
+                <span>Given user navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance RTO page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded81.png' src="../Screenshots/embedded81.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicks_on_buying_a_new_car_button()">
+                <span>When user clicks on buying a new car button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance RTO page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded82.png' src="../Screenshots/embedded82.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_city_and_select_a_rto_numer()">
+                <span>And user navigated to city and select a RTO numer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance RTO page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded83.png' src="../Screenshots/embedded83.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.click_on_a_city_and_select_a_rto_number()">
+                <span>Then click on a city and select a RTO number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance RTO page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded84.png' src="../Screenshots/embedded84.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="196"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance brand name page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_car_insurance_page()">
+                <span>Given user navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance brand name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded85.png' src="../Screenshots/embedded85.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_verifies_the_brand_name_page()">
+                <span>When user verifies the brand name page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance brand name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded86.png' src="../Screenshots/embedded86.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_a_brand()">
+                <span>Then user selects a brand</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance brand name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded87.png' src="../Screenshots/embedded87.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="203"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance model name page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_car_insurance_page()">
+                <span>Given user navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance model name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded88.png' src="../Screenshots/embedded88.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_verfies_model_name_page()">
+                <span>When user verfies model name page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance model name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded89.png' src="../Screenshots/embedded89.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_the_model_name()">
+                <span>Then user selects the model name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance model name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded90.png' src="../Screenshots/embedded90.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="210"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance model fueltype page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_car_insurance_page()">
+                <span>Given user navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance model fueltype page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded91.png' src="../Screenshots/embedded91.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_verifies_fueltype_name_page()">
+                <span>When user verifies fueltype name page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance model fueltype page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded92.png' src="../Screenshots/embedded92.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_fueltype_name()">
+                <span>Then user selects fueltype name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance model fueltype page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded93.png' src="../Screenshots/embedded93.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="217"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance variant name page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_car_insurance_page()">
+                <span>Given user navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance variant name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded94.png' src="../Screenshots/embedded94.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_verifies_variant_name_page()">
+                <span>When user verifies variant name page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance variant name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded95.png' src="../Screenshots/embedded95.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_a_variant_name()">
+                <span>Then user selects a variant name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance variant name page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded96.png' src="../Screenshots/embedded96.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="224"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance contact  page without details in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_car_insurance_page()">
+                <span>Given user navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact  page without details in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded97.png' src="../Screenshots/embedded97.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicks_on_final_view_prices_button()">
+                <span>When user clicks on final view prices button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact  page without details in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded98.png' src="../Screenshots/embedded98.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.capture_error_messages()">
+                <span>Then capture error messages</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact  page without details in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded99.png' src="../Screenshots/embedded99.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="231"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance contact page with invalid phone number in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_car_insurance_page()">
+                <span>Given user navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact page with invalid phone number in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded100.png' src="../Screenshots/embedded100.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_entered_valid_fullname_email_and_invalid_phone()">
+                <span>When user entered valid fullname, email and invalid phone</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact page with invalid phone number in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded101.png' src="../Screenshots/embedded101.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.capture_error_message_invalid_phone()">
+                <span>Then capture error message invalid phone</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact page with invalid phone number in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded102.png' src="../Screenshots/embedded102.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="238"><span class="badge log pass-bg mr-2">Pass</span>user validates car insurance contact page with invalid email in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_car_insurance_page()">
+                <span>Given user navigated to car insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact page with invalid email in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded103.png' src="../Screenshots/embedded103.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_entered_valid_fullname_phone_and_invalid_email()">
+                <span>When user entered valid fullname, phone and invalid email</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact page with invalid email in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded104.png' src="../Screenshots/embedded104.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.capture_error_message_invalid_mail()">
+                <span>Then capture error message invalid mail</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates car insurance contact page with invalid email in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded105.png' src="../Screenshots/embedded105.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="245"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance menu in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicked_on_policy_bazar_logo_link2()">
+                <span>Given user clicked on policy bazar logo link2</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance menu in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded106.png' src="../Screenshots/embedded106.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_homepage3()">
+                <span>When user navigated to homepage3</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance menu in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded107.png' src="../Screenshots/embedded107.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicked_on_insurance_products_dropdown()">
+                <span>And user clicked on insurance products dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance menu in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded108.png' src="../Screenshots/embedded108.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.store_all_the_health_insurance_menu_in_the_list()">
+                <span>Then store all the health insurance menu in the list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance menu in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded109.png' src="../Screenshots/embedded109.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="254"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance link in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_homepage()">
+                <span>Given user navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance link in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded110.png' src="../Screenshots/embedded110.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicked_on_health_insurance_link_and_navigated_to_health_insurance_page()">
+                <span>When user clicked on health insurance link and navigated to health insurance page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance link in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded111.png' src="../Screenshots/embedded111.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicked_on_more_members_button()">
+                <span>And user clicked on more members button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance link in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded112.png' src="../Screenshots/embedded112.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicks_on_select_self_as_a_member()">
+                <span>When user clicks on select self as a member</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance link in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded113.png' src="../Screenshots/embedded113.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicks_on_continue1_button()">
+                <span>Then user clicks on continue1 button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance link in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded114.png' src="../Screenshots/embedded114.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="265"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance age page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_age_page()">
+                <span>Given user navigated to age page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance age page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded115.png' src="../Screenshots/embedded115.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_age_from_drop_down()">
+                <span>Then user selects age from drop down</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance age page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded116.png' src="../Screenshots/embedded116.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicks_on_continue2_button()">
+                <span>Then user clicks on continue2 button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance age page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded117.png' src="../Screenshots/embedded117.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="272"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance city page in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_city_page()">
+                <span>Given user navigated to city page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance city page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded118.png' src="../Screenshots/embedded118.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_selects_city_from_drop_down_and_clicks_on_continue3_button()">
+                <span>Then user selects city from drop down and clicks on continue3 button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance city page in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded119.png' src="../Screenshots/embedded119.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="277"><span class="badge log pass-bg mr-2">Pass</span>user validates Health insurance contact page with positive details in policy bazaar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_navigated_to_contact_page()">
+                <span>Given user navigated to contact page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positive details in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded120.png' src="../Screenshots/embedded120.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_enters_valid_name_and_phone_number_in_textboxes()">
+                <span>When user enters valid name and phone number in textboxes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positive details in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded121.png' src="../Screenshots/embedded121.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Policybazaar.StepDefinations.SmokeStepDefination.user_clicks_on_continue4()">
+                <span>Then user clicks on continue4</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Policybazaar.StepDefinations.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>user validates Health insurance contact page with positive details in policy bazaar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded122.png' src="../Screenshots/embedded122.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:09:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User validates Travel insurance page in policy bazaar website</a>
+<div class="">
+<span class="badge badge-default">Insurances_end_to_end.User validates Travel insurance page in policy bazaar website</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:11:44 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='50'>user validates Travel insurance contact details page in policy bazaar website</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Travel insurance contact details page in policy bazaar website</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:12:11 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='57'>user validates Travel Insurance results in policy bazaar website</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Travel Insurance results in policy bazaar website</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:16:06 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='127'>user validates Health Insurance results in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Health Insurance results in policy bazaar</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:13:00 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='68'>user validates the health insurance-members page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates the health insurance-members page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:13:28 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='79'>user validates Health insurance member page in policy bazaar website</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Health insurance member page in policy bazaar website</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:13:55 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='88'>user validates Health insurance age page in policy bazaar website</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Health insurance age page in policy bazaar website</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:14:20 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='97'>user validates Health insurance city page in policy bazaar website</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Health insurance city page in policy bazaar website</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:14:51 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='106'>user validates Health insurance contact page with positive name in policy bazaar website</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Health insurance contact page with positive name in policy bazaar website</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:15:11 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='113'>user validates Health insurance contact page with positve name and negative phone number</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Health insurance contact page with positve name and negative phone number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:15:41 am</td>
+<td>
+<a href="#" class="linked" test-id='49' id='120'>user validates Health insurance result page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurance_regression.user validates Health insurance result page in policy bazaar</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@smoke,</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke,</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:09:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User validates Travel insurance page in policy bazaar website</a>
+<div class="">
+<span class="badge badge-default">Insurances_end_to_end.User validates Travel insurance page in policy bazaar website</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>19</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">19 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>19 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:16:49 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='135'>user validates Travel insurance destination page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Travel insurance destination page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:17:14 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='144'>user validates Travel insurance trip date page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Travel insurance trip date page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:17:46 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='151'>user validates Travel insurance traveller page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Travel insurance traveller page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:18:19 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='160'>user validates Travel insurance medical history page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Travel insurance medical history page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:18:49 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='167'>user validates Travel insurance results page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Travel insurance results page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:19:18 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='176'>user validates car insurance home page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance home page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:19:41 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='187'>user validates car insurance RTO page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance RTO page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:20:09 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='196'>user validates car insurance brand name page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance brand name page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:20:34 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='203'>user validates car insurance model name page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance model name page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:21:03 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='210'>user validates car insurance model fueltype page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance model fueltype page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:21:30 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='217'>user validates car insurance variant name page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance variant name page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:22:00 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='224'>user validates car insurance contact page without details in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance contact page without details in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:22:29 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='231'>user validates car insurance contact page with invalid phone number in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance contact page with invalid phone number in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:23:00 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='238'>user validates car insurance contact page with invalid email in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates car insurance contact page with invalid email in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:23:31 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='245'>user validates Health insurance menu in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Health insurance menu in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:23:57 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='254'>user validates Health insurance link in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Health insurance link in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:24:22 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='265'>user validates Health insurance age page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Health insurance age page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:24:44 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='272'>user validates Health insurance city page in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Health insurance city page in policy bazaar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:25:12 am</td>
+<td>
+<a href="#" class="linked" test-id='134' id='277'>user validates Health insurance contact page with positive details in policy bazaar</a>
+<div class="">
+<span class="badge badge-default">Insurances_smoke.user validates Health insurance contact page with positive details in policy bazaar</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 1, 2024 09:09:03 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 1, 2024 09:25:27 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>3</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>33</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>244</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Insurances_end_to_end":121.298,"Insurance_regression":286.89,"Insurances_smoke":513.195
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@regression</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@smoke,</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>19</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 33,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 244,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

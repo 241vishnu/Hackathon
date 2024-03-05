@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" thread-count="3" >
-  <test name="chromeTest" >
- <!--  <parameter name="browser" value="Chrome" /> -->
+
+ <!-- <test name="chromeTest" >
+  <parameter name="browser" value="Chrome" /> 
   <classes>
-  <class name="travelInsurance.TestRunner.InsuranceTestRunner"/>
+  <class name="com.Policybazaar.TestRunner.InsurancesTestRunner"/>
   </classes>
-  </test> 
- <!-- <test name="EdgeTest" >
+  </test> -->
+  
+<test name="EdgeTest" >
   <parameter name="browser" value="Edge" />
   <classes>
-  <class name="travelInsurance.TestRunner.InsuranceTestRunner"/>
+  <class name="com.Policybazaar.TestRunner.InsurancesTestRunner"/>
   </classes>
-  </test>  -->
+  </test>
+  
 </suite> <!-- Suite -->

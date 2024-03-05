@@ -1,7 +1,7 @@
 Feature: Insurances_end_to_end
 
 	@smoke, @regression
-  Scenario Outline: Travel insurance
+  Scenario Outline: User validates  Travel insurance page in policy bazaar website
   
     Given user navigates to policy bazaar home
     When user clicked on travel insurance link and navigates to destination page
@@ -12,7 +12,7 @@ Feature: Insurances_end_to_end
     | Destinations		| Traveller | contactDetails |
     |	United Kingdom	|		2				|	9876575345		|
  
-  Scenario Outline: Car insurance
+  Scenario Outline: User validates  car insurance page in policy bazaar website
   
   	Given user navigated to policy bazaar application
   	When user clicked on car insurance link and navigates to car insurance page
@@ -27,12 +27,12 @@ Feature: Insurances_end_to_end
   	|	SelectCity	|	CarBrand	|	CarModel	|	FuelType	|	Name	|		Email				|	phoneNumber	|
   	|	Chennai			| Tata			| Nexon			| petrol		| ram		| abcgamil.com	|	6784367565	|
  
- Scenario: Health Insurance menu
+ Scenario: User validates  health insurances menu  in policy bazaar website
   	Given user navigated to policy bazaar homepage
   	When user clicked on insurance products drop down
   	Then store all the health insurances menu in the list
 
- Scenario Outline: Health Insurance
+ Scenario Outline: User validates  health insurance page in policy bazaar website
     Given user navigated to policy bazaar homepage
   	When user clicks on health insurance link and navigated to health insurance page
   	And user  provided valid data with "<member>","<age>","<city>","<name>","<phone>"and click on continue
