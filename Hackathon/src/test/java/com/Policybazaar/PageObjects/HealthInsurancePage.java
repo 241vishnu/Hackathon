@@ -350,11 +350,30 @@ public class HealthInsurancePage extends BasePage {
 
 	// method to verify the medical history page
 	public void medicalHistoryPage() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(medicalPage));
 		Assert.assertEquals("Do you have an existing illness or medical history?", medicalPage.getText().toString());
 	}
+	
+	public void previousProviders() {
+		try {
+		js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//*[@id=\"step_6\"]/div[1]/div[2]/label")));
+		}
+		catch(Exception e) {
+			
+		}
+		
+		}
 
+	public void viewPlans() {
+		try {
+		js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//*[@id=\"btnHealthStep6\"]")));
+		}
+		catch(Exception e) {
+			
+		}
+	}
 	// method to sort
 	public void sortby() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));

@@ -179,8 +179,10 @@ public class TravelInsurancePage extends BasePage {
 
 	// method to click on travel insuranc icon
 	public void travelInsuranceIcon() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(icon));
 		icon.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 	}
 
 	// method to verify the destination page
@@ -204,6 +206,7 @@ public class TravelInsurancePage extends BasePage {
 
 	// method to verify the tripdate page
 	public void tripDatePage() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		System.out.println(TripDate.getText());
 		Assert.assertEquals("#36b37e", BasePage.hexColor(TripDate));
 	}
@@ -295,7 +298,7 @@ public class TravelInsurancePage extends BasePage {
 	// method to click on proceed to medical history button
 	public void navigatToMedicalHistoryPage() {
 		js.executeScript("arguments[0].click();", proceedToMedicalHistory);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 
 	}
 
@@ -370,8 +373,9 @@ public class TravelInsurancePage extends BasePage {
 	// method to select student plan type
 	public void planType() {
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(plantype));
+		
 		js.executeScript("arguments[0].click();", plantype);
 		js.executeScript("arguments[0].click();", StudentPlan);
 	}

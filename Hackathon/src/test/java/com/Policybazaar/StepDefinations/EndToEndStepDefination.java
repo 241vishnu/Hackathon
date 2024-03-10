@@ -1,6 +1,7 @@
 package com.Policybazaar.StepDefinations;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -115,6 +116,7 @@ public class EndToEndStepDefination {
 	@When("user clicked on car insurance link and navigates to car insurance page")
 	public void user_clicked_on_car_insurance_link_and_navigates_to_car_insurance_page() {
     	HelperClass.getLogger().info("clicking on car insurance icon.....");
+    	CIP.inusranceshover();
 		CIP.carInsuranceIcon();
 	    CIP.carInsurancePage();
 	}
@@ -243,6 +245,8 @@ public class EndToEndStepDefination {
 
 		HIP.whatsappbtn();
 		HIP.NoCheckBox();
+		HIP.previousProviders();
+		HIP.viewPlans();
 		HIP.sortby();
     	HelperClass.getLogger().info("Sorting and storing the list in excel.....");
 		HashMap<String,String> results=HIP.results();

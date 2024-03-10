@@ -383,6 +383,8 @@ public class RegressionStepDefination {
 	public void user_clicks_on_no_checkbox() {
 		HIP.whatsappbtn();
 		HIP.NoCheckBox();
+		HIP.previousProviders();
+		HIP.viewPlans();
 	
 	}
 

@@ -1,6 +1,6 @@
 Feature: Insurances_end_to_end
 
-	@smoke, @regression
+	@test
   Scenario Outline: User validates  Travel insurance page in policy bazaar website
   
     Given user navigates to policy bazaar home
@@ -11,7 +11,7 @@ Feature: Insurances_end_to_end
     Examples:
     | Destinations		| Traveller | contactDetails |
     |	United Kingdom	|		2				|	9876575345		|
- 
+ @test
   Scenario Outline: User validates  car insurance page in policy bazaar website
   
   	Given user navigated to policy bazaar application
@@ -26,12 +26,12 @@ Feature: Insurances_end_to_end
   	Examples:
   	|	SelectCity	|	CarBrand	|	CarModel	|	FuelType	|	Name	|		Email				|	phoneNumber	|
   	|	Chennai			| Tata			| Nexon			| petrol		| ram		| abcgamil.com	|	6784367565	|
- 
+ @test
  Scenario: User validates  health insurances menu  in policy bazaar website
   	Given user navigated to policy bazaar homepage
   	When user clicked on insurance products drop down
   	Then store all the health insurances menu in the list
-
+@test
  Scenario Outline: User validates  health insurance page in policy bazaar website
     Given user navigated to policy bazaar homepage
   	When user clicks on health insurance link and navigated to health insurance page
@@ -40,7 +40,7 @@ Feature: Insurances_end_to_end
   	Examples: 
   	|	member	|	age	|	city									|	name	|	 phone			|
   	|	self		|	34	| Hyderabad(Telangana)	| arjun	|	9769878756	|
-  	
+  
   	
  
   	
